@@ -320,7 +320,7 @@
 	</div>
 
 	<div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div>
-
+	
 
 	<audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio>
 
@@ -336,21 +336,14 @@
 
 		function updateCountdown() {
 			const now = new Date();
-			let diff = anniversary - now; // 计算纪念日与当前时间的差值
+			const diff = Math.abs(now - anniversary); // 计算时间差的绝对值
 
-			if (diff < 0) {
-				// 如果纪念日已经过去，计算从纪念日到当前时间的差值
-				diff = now - anniversary;
-				const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-				const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-				const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+			const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-				document.getElementById('timer').innerText = `${days}天${hours}时${minutes}分${seconds}秒`;
-			} else {
-				// 如果纪念日还未到，显示“还未到纪念日”
-				document.getElementById('timer').innerText = '还未到纪念日';
-			}
+			document.getElementById('timer').innerText = `${days}天${hours}时${minutes}分${seconds}秒`;
 		}
 
 		// 初始更新
