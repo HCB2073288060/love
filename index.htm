@@ -1,4 +1,5 @@
 <html><!DOCTYPE HTML>
+<html lang="zh-CN">
 <!--[if IE 6]>
 <html id="ie6" class="ie ie6 lt-ie9">
 <![endif]-->
@@ -14,6 +15,8 @@
 <!--[if !(IE)]><!-->
 <html>
 <!--<![endif]-->
+
+	
 <head>
 	<meta http-equiv='Pragma' content='no-cache' />
 	<meta charset="UTF-8">
@@ -22,8 +25,41 @@
 	<meta name="description" content="这是HCB为807制作的表白网站">
 	<title>HCB LOVE 807</title>
 	<link rel="stylesheet" href="all.min.css" >
+	
 </head>
 <body>
+	    <div id="countdown">
+        <div class="line1">HCB和807在一起已经</div>
+        <div class="line2" id="timer">XX天XX时XX分XX秒</div>
+    </div>
+
+    <script>
+        // 纪念日时间
+        const anniversary = new Date('2024-08-26T00:00:00+08:00');
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = now - anniversary;
+
+            if (diff < 0) {
+                document.getElementById('timer').innerText = '还未到纪念日';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('timer').innerText = `${days}天${hours}时${minutes}分${seconds}秒`;
+        }
+
+        // 初始更新
+        updateCountdown();
+
+        // 每秒更新一次
+        setInterval(updateCountdown, 1000);
+    </script>
 	<div class="flowtime">
 		<div class="ft-section section-1" data-id="section-1">
 			<div id="/section-1/page-1" class="ft-page page-1" data-id="page-1">
@@ -290,7 +326,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div>
+
 	
 
 	<audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio>
