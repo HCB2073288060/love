@@ -838,7 +838,7 @@ body,button {
 }
 .page-35 h3 {
 	position:absolute;
-	right:10%;
+	right:5%;
 	top:5%;
 	z-index:2;
 	font-size:2em
@@ -922,29 +922,31 @@ body,button {
 	background-color:#b1dceb
 }
 .page-46 {
-    background: #66cbff;
-    position: relative; /* 确保子元素的绝对定位相对于此容器 */
+	background: #66cbff;
+	position: relative; /* 确保子元素的绝对定位相对于此容器 */
 }
 
 .page-46 h3 {
-    position: absolute;
-    top: 1em;
-    right: 1em; /* 将文字定位到右上角 */
-    margin: 0;
-    padding: 0;
+	position: absolute;
+	top: 1em;
+	right: 1em; /* 将文字定位到右上角 */
+	margin: 0;
+	padding: 0;
+	text-align: right; /* 文字右对齐 */
 }
 
 .page-47 {
-    background-color: #fdcbca;
-    position: relative; /* 确保子元素的绝对定位相对于此容器 */
+	background-color: #fdcbca;
+	position: relative; /* 确保子元素的绝对定位相对于此容器 */
 }
 
 .page-47 h3 {
-    position: absolute;
-    top: 1em;
-    right: 1em; /* 将文字定位到右上角 */
-    margin: 0;
-    padding: 0;
+	position: absolute;
+	top: 1em;
+	right: 1em; /* 将文字定位到右上角 */
+	margin: 0;
+	padding: 0;
+	text-align: right; /* 文字右对齐 */
 }
 
 .page-48 {
