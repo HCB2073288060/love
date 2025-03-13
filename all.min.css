@@ -628,6 +628,14 @@ body,button {
 .page-3 {
 	background-color:#c1b287
 }
+.page-3 p {
+	height:10%;
+	padding-top:5%;
+	margin:0
+}
+.page-3 img {
+	height:80%
+}
 .page-6 {
 	background-color:#ecfafb;
 	padding:0
