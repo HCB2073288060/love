@@ -840,9 +840,9 @@ body,button {
 	position:absolute;
 	right:10%;
 	top:5%;
-	color:#eee
 	z-index:2;
 	font-size:2em
+	color:#eee
 }
 .page-36 h3 {
 	text-align:right;
