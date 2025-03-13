@@ -970,6 +970,8 @@ body,button {
 .page-50 {
 	background-color:#aae1f6;
 	padding:0
+	position: relative; /* 添加这行 */
+}
 }
 .page-50 .img1 {
 	position:absolute;
