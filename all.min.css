@@ -954,15 +954,6 @@ body,button {
 }
 .page-49 {
 	text-align:left
-	background-color:#aae1f6;
-}
-.page-49 h3 {
-	position: absolute;
-	top: 1em;
-	right: 1em; /* 将文字定位到右上角 */
-	margin: 0;
-	padding: 0;
-	text-align: left; /* 文字左对齐 */
 }
 
 .page-49 img {
