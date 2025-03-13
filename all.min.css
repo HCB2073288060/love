@@ -932,7 +932,7 @@ body,button {
 	right: 1em; /* 将文字定位到右上角 */
 	margin: 0;
 	padding: 0;
-	text-align: right; /* 文字右对齐 */
+	text-align: left; /* 文字左对齐 */
 }
 
 .page-47 {
@@ -946,7 +946,7 @@ body,button {
 	right: 1em; /* 将文字定位到右上角 */
 	margin: 0;
 	padding: 0;
-	text-align: right; /* 文字右对齐 */
+	text-align: left; /* 文字左对齐 */
 }
 
 .page-48 {
